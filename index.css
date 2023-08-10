@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr 1fr;
+    grid-template-areas: 
+    "home-header guest-header"
+    "score guest-score"
+    "add-btn guest-add-btn"
+    "home-subtract guest-subtract"
+    "reset reset";
+    grid-column-gap: 70px;
+    border: 3px solid white inset;
+    border-radius: 10px;
+    background-color: #075985;
+    color: white;
+    max-width: 80%;
+    height: 350px;
+    justify-items: center;
+    padding: 15px;
+}
+
+.home-header{
+    grid-area: home-header;
+    text-align: center;
+    font-family: 'open sans';
+    font-size: 25px;
+    
+}
+
+.guest-header{
+    grid-area: guest-header;
+    text-align: center;
+    font-family: 'open sans';
+    font-size: 25px;
+}
+
+#score{
+    grid-area: score;
+    background-color: white;
+    color: red;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center
+}
+
+#guest-score{
+    grid-area: guest-score;
+    background-color: white;
+    color: red;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#home-el{
+    font-size: 5em;
+    font-family: 'DotGothic16', sans-serif;
+    
+    
+}
+
+#guest-el{
+    font-size: 5em;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+
+.add-btn{
+    
+    grid-area: add-btn;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px white;
+    color: white;
+    font-family: 'dotgothic16';
+    background-color: #082f49;
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.guest-add-btn{
+    grid-area: guest-add-btn;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px white;
+    color: white;
+    font-family: 'dotgothic16';
+    background-color: #082f49;
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#home-subtract{
+    grid-area: home-subtract;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px white;
+    color: white;
+    font-family: 'dotgothic16';
+    background-color: #082f49;
+    height: 30px;
+    width: 60px;
+}
+
+#guest-subtract{
+    grid-area: guest-subtract;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px white;
+    color: white;
+    font-family: 'dotgothic16';
+    background-color: #082f49;
+    height: 30px;
+    width: 60px;
+}
+
+#reset{
+    grid-area: reset;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px white;
+    color: white;
+    font-family: 'dotgothic16';
+    background-color: #082f49;
+    height: 30px;
+    width: 150px;
+}
